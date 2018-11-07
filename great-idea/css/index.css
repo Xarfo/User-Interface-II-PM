@@ -1,0 +1,262 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* *//* *//* *//* *//* *//* */
+/* Your code starts here! */
+/* *//* *//* *//* *//* *//* */
+
+hr {
+  margin: 30px 0;
+  height: 3px;
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+}
+
+p {
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
+}
+
+.container {
+  width: 876px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* navigation */
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: gray;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.navigation__links a {
+  margin: 0 30px;
+}
+
+/* header */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.header-left,
+.header-right {
+  margin: 20px;
+}
+
+.header__title {
+  font-size: 100px;
+}
+
+.header__button,
+.services__button,
+.products__button {
+  background: white;
+  vertical-align: top;
+  margin-top: 6px;
+  padding: 8px 44px;
+  font-size: 17px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.header__button:hover,
+.services__button:hover,
+.products__button:hover {
+  background: black;
+  color: white;
+}
+
+.services-header__text {
+  margin: 20px 20px;
+}
+
+/* content-top */
+.content-top {
+  margin: 20px auto;
+  display: flex;
+}
+
+/* content-image */
+.content-image {
+  text-align: center;
+}
+
+/* content-bottom */
+.content-bottom {
+  margin: 20px auto;
+  display:flex;
+}
+.content-bottom__left,
+.content-bottom__middle,
+.content-bottom__right {
+  padding: 2px;
+}
+
+/* contact */
+.contact {
+  line-height: 30px;
+}
+
+/* footer */
+.footer {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* *//* *//* *//* *//* *//* */
+/* SERVICES PAGE */
+/* *//* *//* *//* *//* *//* */
+
+.services-header {
+  margin-top: 70px;
+}
+
+.services-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-specialties > * {
+  flex-basis: 47%;
+  border: 2px solid black;
+  background: #F4F3F4;
+  margin: 10px;
+  padding: 20px;
+}
+
+.services-facts {
+  display: flex;
+}
+
+.services-facts_text ul > * {
+  font-family: 'Amatic SC', cursive;
+  line-height: 2rem;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+/* *//* *//* *//* *//* *//* */
+/* PRODUCTS PAGE */
+/* *//* *//* *//* *//* *//* */
+
+.products-header {
+  margin-top: 70px;
+}
+
+.products-specialties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.products-specialties > * {
+  flex-basis: 47%;
+  border: 2px solid black;
+  background: #F4F3F4;
+  margin: 10px;
+  padding: 20px;
+}
+
+.products-specialties__web {
+  background-image: linear-gradient(90deg, #006847 30%, #FFF 70%, #CE1126 30%);
+}
+
+.products-specialties__web button {
+  background-image: linear-gradient(#97cc76, #8bcc62);
+}
+
+.products-specialties__ios {
+  background-image: radial-gradient(at bottom right, green, blue, purple);
+}
+
+.products-specialties__ios:hover {
+  background-image: radial-gradient(farthest-corner, purple, green, blue);
+}
+
+.products-specialties__ios button {
+  background-image: linear-gradient(#fce374, #fcdf5b);
+}
+
+
+.products-specialties__android {
+  background-image: radial-gradient(at top right, red, yellow);
+}
+
+.products-specialties__android:hover {
+  background-image: radial-gradient(farthest-side, yellow, red);
+}
